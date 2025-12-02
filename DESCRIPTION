@@ -1,0 +1,13 @@
+Package: citbir
+Type: Package
+Title: A package containing the 'citbi' dataset provided by PETCARN, and functions to clean it.
+Version: 1.0
+Date: 2025-12-01
+Author: William Y Siu
+Maintainer: Who to complain to <williamsiu@berkeley.edu>
+Description: Dataset provided by PETCARN. Functions designed to parse datasets and reassign values as necessary. 
+License: MIT License
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5)
+LazyData: true
