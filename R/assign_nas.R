@@ -11,5 +11,6 @@
 
 assign_nas <-
 function(data, column, additional_nas = c(91, 92)) {
-    ifelse(data$column %in% additional_nas, NA, column)
+    ifelse(as.numeric(data[[column]]) %in% additional_nas, NA, column)
 }
+
