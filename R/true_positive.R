@@ -7,22 +7,27 @@
 #' 
 #' @returns An integer.
 
+#' @export
 true_positive <- function(truths, fitted) {
-    sum(fitted == reality & reality == "malignant")
+    sum(fitted == truths & truths == 1)
 }
 
+#' @export
 true_negative <- function(truths, fitted) {
-    sum(fitted == reality & reality == "benign")
+    sum(fitted == truths & truths == 0)
 }
 
+#' @export
 false_positive <- function(truths, fitted) {
-    sum(fitted != reality & reality == "benign")
+    sum(fitted != truths & truths == 0)
 }
 
+#' @export
 false_negative <- function(truths, fitted) {
-    sum(fitted != reality & reality == "malignant")
+    sum(fitted != truths & truths == 1)
 }
 
+#' @export
 type_test <- function(truths, fitted) {
   return(list("True positives" = true_positive(truths, fitted),
               "True negatives" = true_negative(truths, fitted),
