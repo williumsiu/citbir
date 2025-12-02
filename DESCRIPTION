@@ -1,7 +1,7 @@
 Package: citbir
 Type: Package
 Title: A package containing the 'citbi' dataset provided by PETCARN, and functions to clean it.
-Version: 1.0
+Version: 1.0.1
 Date: 2025-12-01
 Author: William Y Siu
 Maintainer: Who to complain to <williamsiu@berkeley.edu>
